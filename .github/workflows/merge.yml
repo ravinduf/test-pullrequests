@@ -21,10 +21,11 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: Auto Merge Bot
-        # You may pin to the exact commit or the version.
-        # uses: casassg/auto-merge-bot@8f9d4eef86461f8f102f7bc3ba53c1359201fb18
-        uses: casassg/auto-merge-bot@v0.3.2
+      - name: Auto Review
+       
+        uses: Garlic-Team/Auto-Review@1.0.5
         with:
-          merge_method: 'merge'
+          GITHUB_TOKEN: ${{ github.token }}
+          
+       
           
